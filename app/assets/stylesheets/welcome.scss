@@ -1,3 +1,31 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.main-menu {
+  line-height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 80px;
+
+  .logo {
+    padding-left: 10px;
+    font-size: 1.5em;
+  }
+
+  .menu-links {
+    padding-right: 10px;
+
+    a {
+      color: inherit;
+      display: inline-block;
+      width: 100px;
+      text-align: center;
+
+      &:hover {
+        background-color: darken(#fff, 5%);
+      }
+    }
+  }
+}
