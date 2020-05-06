@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .main-menu {
+  font-size: 16px;
   line-height: 40px;
   justify-content: space-between;
   align-items: center;
@@ -11,7 +12,9 @@
 
   .logo {
     padding-left: 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
+
+    strong { font-size: 1.1em; }
   }
 
   .menu-links {
@@ -26,6 +29,56 @@
       &:hover {
         background-color: darken(#fff, 5%);
       }
+    }
+  }
+}
+
+p.abstract {
+  font-size: 1.1em;
+  padding: 10px;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+
+  .col-1, .col-2 {
+    flex-basis: 50%;
+  }
+
+  .work-experience .work-item:first-of-type {
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+  }
+
+  section {
+    padding: 10px;
+
+    .section-title {
+      font-size: 1.3em;
+    }
+
+    .workplace, .position {
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+    }
+
+    .workplace .address, .position .period {
+      opacity: 0.5;
+      font-size: 0.9em;
+    }
+
+    .workplace .name, .position .title {
+      font-weight: normal;
+    }
+
+    .workplace .name { font-size: 1.2em; }
+    .position .title { font-size: 1em; }
+
+    p {
+      text-align: justify;
     }
   }
 }

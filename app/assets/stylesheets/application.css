@@ -17,10 +17,15 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-size: 14px;
   text-decoration: none;
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.blue {
+  color: #000a89;
 }
